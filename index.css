@@ -1,156 +1,152 @@
-@import url(https://fonts.googleapis.com/css?family=Dr+Sugiyama);
+@import url(https://fonts.googleapis.com/css?family=Saira);
 
 body {
-	padding: 0;
-	margin: 0;
-	font: 100%/1.5 Helvetica Neue, sans-serif;
+  padding: 0;
+  margin: 0;
+  font: 100%/1.5 Helvetica Neue, sans-serif;
 }
 
 code {
-	font-family: Consolas, Monaco, monospace;
-	white-space: nowrap;
+  font-family: Consolas, Monaco, monospace;
+  white-space: nowrap;
 }
 
 a {
-	color: hsl(190, 80%, 40%);
+  color: #4575b4;
 }
 
-	a:not(:hover) {
-		text-decoration: none;
-	}
+a:not(:hover) {
+  text-decoration: none;
+}
 
 h1 {
-	margin: .5em 0;
-	font: 250%/1 'Dr Sugiyama', cursive;
+  margin: .5em 0;
+  font: 250%/1 'Saira', sans-serif;
 }
 
-body > header,
-body > section,
-body > footer {
-	padding: 1em calc(50% - 23em)
+body header, body section, body footer {
+  padding: 1em calc(50% - 23em)
 }
 
-body > header {
-	background: radial-gradient(at 50% 90%, hsl(190, 80%, 56%) 10%, hsl(190, 80%, 44%));
-	text-align: center;
-	color: white;
-	padding-bottom: 3em;
-	font-weight: bold;
-	font-size: 120%;
+body header {
+  background: #4575b4;
+  text-align: center;
+  color: white;
+  padding-bottom: 3em;
+  font-weight: bold;
+  font-size: 120%;
 }
 
-	body > header h1 {
-		font-size: 500%;
-	}
+body header h1 {
+  font-size: 500%;
+}
 
-	body > header a {
-		color: hsla(0,0%,100%,.8);
-	}
+body header a {
+  color: hsla(0, 0%, 100%, .8);
+}
 
-	body > header a:hover {
-		color: white;
-	}
+body header a:hover {
+  color: white;
+}
 
-	body > header code {
-		font-size: 88%;
-	}
+body header code {
+  font-size: 88%;
+}
 
-	body > header a[download] {
-		display: inline-block;
-		margin: 0 .2em;
-		color: white;
-		border: .12em solid white;
-		padding: .2em .6em;
-		border-radius: .35em;
-		text-decoration: none;
-	}
+body header a[download] {
+  display: inline-block;
+  margin: 0 .2em;
+  color: white;
+  border: .12em solid white;
+  padding: .2em .6em;
+  border-radius: .35em;
+  text-decoration: none;
+}
 
-		body > header a[download]:hover {
-			background: white;
-			color: hsl(190, 80%, 50%);
-		}
+body header a[download]:hover {
+  background: white;
+  color: #4575b4;
+}
 
 .demo {
-	width: -moz-max-content;
-	width: max-content;
-	padding: 0;
-	text-align: center;
-	transform: scale(1.5);
-	transform-origin: 50% 0;
-	margin: 2em auto;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0;
+  text-align: center;
+  transform: scale(1.5);
+  transform-origin: 50% 0;
+  margin: 2em auto;
 }
 
-	.demo input {
+.demo input {
 
-	}
+}
 
-body > section h1 {
-	color: hsl(190, 80%, 42%);
+body section h1 {
+  color: #4575b4;
 }
 
 #pros-cons {
-	display: flex;
+  display: flex;
 }
 
-	#pros-cons > section {
-		flex: 1;
-	}
+#pros-cons section {
+  flex: 1;
+}
 
-	#pros-cons > section:nth-of-type(2) {
-		margin-left: 1em;
-	}
+#pros-cons section:nth-of-type(2) {
+  margin-left: 1em;
+}
 
 ul {
-	padding-left: 0;
-	list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
-	.pros li,
-	.cons li {
-		text-indent: -1em;
-	}
+.pros li, .cons li {
+  text-indent: -1em;
+}
 
-	.pros li::before,
-	.cons li::before {
-		width: .8em;
-		padding-right: .2em;
-		font-size: 120%;
-	}
+.pros li::before, .cons li::before {
+  width: .8em;
+  padding-right: .2em;
+  font-size: 120%;
+}
 
-	.pros li::before {
-		content: "✓";
-		color: hsl(80, 60%, 50%);
-	}
+.pros li::before {
+  content: "✓";
+  color: #1a9850;
+}
 
-	.cons li::before {
-		content: "✘";
-		color: hsl(0, 60%, 55%);
-	}
+.cons li::before {
+  content: "✘";
+  color: #d73027;
+}
 
-	#pros-cons section:first-of-type ul {
-		padding-right: 1em;
-	}
+#pros-cons section:first-of-type ul {
+  padding-right: 1em;
+}
 
-body > footer {
-	background: #333;
-	color: white;
+body footer {
+  background: #333;
+  color: white;
 }
 
 .github-ribbon {
-	position: absolute;
-	top: 0;
-	left: 0;
-	transform: rotate(90deg) translateX(70.71068%) rotate(-90deg) rotate(-45deg) translateY(-100%);
-	transform-origin: 0 0;
-	padding: .4em 3em;
-	background: black;
-	text-decoration: none;
-	color: white;
-	box-shadow: 0 0.1em 0 0.1em rgba(0, 0, 0, 0.15);
-	font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg) translateX(70.71068%) rotate(-90deg) rotate(-45deg) translateY(-100%);
+  transform-origin: 0 0;
+  padding: .4em 3em;
+  background: black;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0.1em 0 0.1em rgba(0, 0, 0, 0.15);
+  font-weight: bold;
 }
 
-	.github-ribbon:hover {
-		background: hsl(25, 100%, 50%);
-		color: black;
-	}
+.github-ribbon:hover {
+  background: #f46d43;
+  color: black;
+}

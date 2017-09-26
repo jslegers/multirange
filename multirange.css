@@ -1,10 +1,108 @@
+/* HTML5 sliders */
+
+input[type=range]::-ms-tooltip {
+  display: none;
+}
+
+input[type=range] {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 1em;
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: 0px solid white;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #bbb;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #4575b4;
+  margin-top: -5px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+  height: 5px;
+  background: #bbb;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #4575b4;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+  height: 5px;
+
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #4575b4;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}
+
 @supports (--css: variables) {
-	input[type="range"].multirange {
-		padding: 0;
-		margin: 0;
-		display: inline-block;
-		vertical-align: top;
-	}
 
 	input[type="range"].multirange.original {
 		position: absolute;
@@ -25,13 +123,13 @@
 		}
 
 	input[type="range"].multirange.ghost {
-		position: relative;
+    position: relative;
 		background: var(--track-background);
 		--track-background: linear-gradient(to right,
 				transparent var(--low), var(--range-color) 0,
 				var(--range-color) var(--high), transparent 0
 			) no-repeat 0 45% / 100% 40%;
-		--range-color: hsl(190, 80%, 40%);
+		--range-color: #4575b4;
 	}
 
 		input[type="range"].multirange.ghost::-webkit-slider-runnable-track {
