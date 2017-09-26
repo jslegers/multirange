@@ -13,10 +13,11 @@ code {
 
 a {
   color: #4575b4;
+	text-decoration: none;
 }
 
-a:not(:hover) {
-  text-decoration: none;
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h1 {
 }
 
 body header, body section, body footer {
-  padding: 1em calc(50% - 23em)
+  padding: 1em calc(50% - 23em);
 }
 
 body header {
@@ -78,10 +79,6 @@ body header a[download]:hover {
   margin: 2em auto;
 }
 
-.demo input {
-
-}
-
 body section h1 {
   color: #4575b4;
 }
@@ -96,6 +93,10 @@ body section h1 {
 
 #pros-cons section:nth-of-type(2) {
   margin-left: 1em;
+}
+
+#pros-cons section:first-of-type ul {
+  padding-right: 1em;
 }
 
 ul {
@@ -121,10 +122,6 @@ ul {
 .cons li::before {
   content: "✘";
   color: #d73027;
-}
-
-#pros-cons section:first-of-type ul {
-  padding-right: 1em;
 }
 
 body footer {
